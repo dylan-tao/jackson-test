@@ -18,4 +18,11 @@ public class JacksonParseDemandController {
         input.parseFillProperty(json);
         return input;
     }
+
+    @PostMapping("/test-fix")
+    public com.example.jacksontest.metadata.fix.input jsonParseOnDemandFix(@RequestBody String json) throws Exception {
+        com.example.jacksontest.metadata.fix.input input = new com.example.jacksontest.metadata.fix.input();
+        input.parseFillProperty(json);
+        return input;
+    }
 }
